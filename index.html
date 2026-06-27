@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Kritika ✨</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff);
+    overflow: hidden;
+}
+
+.card {
+    width: 85%;
+    max-width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: show 1.5s ease;
+}
+
+h1 {
+    color: #e75480;
+    font-size: 40px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+button {
+    background: #e75480;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#secret {
+    display: none;
+    margin-top: 25px;
+    color: #e75480;
+    font-weight: bold;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heart {
+    position: absolute;
+    font-size: 25px;
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="heart" style="left:15%">🤍</div>
+<div class="heart" style="left:50%">✨</div>
+<div class="heart" style="left:80%">🤍</div>
+
+<div class="card">
+
+<h1>Happy Birthday Kritika 🎂✨</h1>
+
+<p>
+Another year, another beautiful chapter ✨<br><br>
+
+Wishing you endless happiness, success, and all the beautiful things
+life has to offer. May your days always be filled with smiles,
+peace, and wonderful memories.<br><br>
+
+Keep smiling, keep growing, and always stay the amazing person you are 🤍
+</p>
+
+<button onclick="showMessage()">Open Surprise 💌</button>
+
+<p id="secret">
+Happy Birthday Kritika ❤️<br>
+May this year bring you everything you dream of.
+Enjoy your special day ✨
+</p>
+
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
