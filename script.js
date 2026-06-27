@@ -2,7 +2,7 @@ const home = document.getElementById("home");
 const letter = document.getElementById("letter");
 const gallery = document.getElementById("gallery");
 const finalPageDiv = document.getElementById("final");
-const forever = document.getElementById("forever");
+
 function hideAll(){
 
     home.classList.remove("active");
@@ -13,13 +13,8 @@ function hideAll(){
 
     finalPageDiv.classList.remove("active");
 
-    if (forever) {
-
-        forever.classList.remove("active");
-
-    }
-
 }
+
 function openSurprise(){
 
     hideAll();
@@ -62,17 +57,7 @@ function finalPage(){
     finalPageDiv.classList.add("active");
 }
 
-function showForever(){
 
-    hideAll();
-
-    if (forever) {
-
-        forever.classList.add("active");
-
-    }
-
-}
 
 hideAll();
 home.classList.add("active");
