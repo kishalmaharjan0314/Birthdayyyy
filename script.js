@@ -2,7 +2,7 @@ const home = document.getElementById("home");
 const letter = document.getElementById("letter");
 const gallery = document.getElementById("gallery");
 const finalPageDiv = document.getElementById("final");
-const forever = document.getElementById("forever
+const forever = document.getElementById("forever");
 function hideAll(){
     home.classList.remove("active");
     letter.classList.remove("active");
