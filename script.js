@@ -75,3 +75,50 @@ setInterval(() => {
     },8000);
 
 },500);
+
+document.addEventListener("mousemove", function(e){
+
+    let heart = document.createElement("div");
+
+    heart.className = "trail-heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = e.clientX + "px";
+
+    heart.style.top = e.clientY + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },1000);
+
+});
+document.addEventListener("touchmove", function(e){
+
+    let touch = e.touches[0];
+
+    let heart = document.createElement("div");
+
+    heart.className = "trail-heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = touch.clientX + "px";
+
+    heart.style.top = touch.clientY + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },1000);
+
+});
+
+
