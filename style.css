@@ -193,3 +193,61 @@ button:hover{
     }
 
 }
+
+.sparkles span{
+
+    position:fixed;
+
+    font-size:24px;
+
+    animation:sparkle 10s linear infinite;
+
+    pointer-events:none;
+
+}
+
+.sparkles span:nth-child(1){left:5%;animation-delay:0s;}
+
+.sparkles span:nth-child(2){left:18%;animation-delay:2s;}
+
+.sparkles span:nth-child(3){left:30%;animation-delay:4s;}
+
+.sparkles span:nth-child(4){left:45%;animation-delay:1s;}
+
+.sparkles span:nth-child(5){left:60%;animation-delay:3s;}
+
+.sparkles span:nth-child(6){left:75%;animation-delay:5s;}
+
+.sparkles span:nth-child(7){left:88%;animation-delay:6s;}
+
+.sparkles span:nth-child(8){left:95%;animation-delay:7s;}
+
+@keyframes sparkle{
+
+    0%{
+
+        top:110%;
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        top:-10%;
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+
