@@ -1,36 +1,20 @@
-function showMessage(){
+function openSurprise(){
 
-document.getElementById("message").style.display="block";
+    document.getElementById("home").style.display="none";
+    document.getElementById("surprise").style.display="block";
 
-createHearts();
+}
+
+function showGallery(){
+
+    document.getElementById("surprise").style.display="none";
+    document.getElementById("gallery").style.display="block";
 
 }
 
+function finalPage(){
 
-function createHearts(){
-
-for(let i=0;i<40;i++){
-
-let heart=document.createElement("div");
-
-heart.innerHTML="❤️";
-
-heart.style.position="fixed";
-heart.style.left=Math.random()*100+"vw";
-heart.style.top="100vh";
-heart.style.fontSize=Math.random()*25+"px";
-
-heart.style.animation="float 5s linear";
-
-document.body.appendChild(heart);
-
-
-setTimeout(()=>{
-
-heart.remove();
-
-},5000);
-
-}
+    document.getElementById("gallery").style.display="none";
+    document.getElementById("final").style.display="block";
 
 }
