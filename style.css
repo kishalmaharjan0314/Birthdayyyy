@@ -324,5 +324,17 @@ button:hover{
     }
 
 }
+#loveCounter{
 
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:#ff4d6d;
+
+    font-weight:bold;
+
+    line-height:1.8;
+
+}
 
