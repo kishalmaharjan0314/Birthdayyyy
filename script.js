@@ -20,6 +20,15 @@ function finalPage(){
     hideAll();
     finalPageDiv.classList.add("active");
 }
-// Show the home page when the website loads
+
 hideAll();
 home.classList.add("active");
+function openImage(src){
+    document.getElementById("imageViewer").style.display="flex";
+    document.getElementById("fullImage").src=src;
+}
+
+function closeImage(){
+    document.getElementById("imageViewer").style.display="none";
+}
+
