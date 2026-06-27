@@ -53,9 +53,9 @@ Happy Birthday once again, my princess.
 <section id="gallery" class="page">
 <h2>📸 Our Beautiful Memories</h2>
 <div class="gallery">
-<img src="IMG_3332.jpeg">
-<img src="IMG_3235.jpeg">
-<img src="IMG_3131.jpeg">
+    <img src="IMG_3332.jpeg" onclick="openImage(this.src)" alt="Photo 1">
+    <img src="IMG_3235.jpeg" onclick="openImage(this.src)" alt="Photo 2">
+    <img src="IMG_3131.jpeg" onclick="openImage(this.src)" alt="Photo 3">
 </div>
 
 
@@ -82,6 +82,11 @@ Happy Birthday My Princess ❤️
 </p>
 <h2>Forever Yours,<br>Kishal ❤️</h2>
 </section>
+</div>
+
+<div id="imageViewer" onclick="closeImage()">
+    <span>&times;</span>
+    <img id="fullImage" src="" alt="Full screen photo">
 </div>
 
 <script src="script.js"></script>
