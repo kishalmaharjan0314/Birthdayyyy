@@ -1,98 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Happy Birthday Kritika Miss ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kritika ❤️</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <div class="container">
-
-    <div id="home">
-        <h1>🎂 Happy Birthday</h1>
-        <h2>Kritika Tamang ❤️</h2>
-
-        <p>
-            Today is a special day because someone truly special was born.
-        </p>
-
-        <button onclick="openSurprise()">
-            🎁 Open Your Surprise
-        </button>
-    </div>
-
-    <div id="surprise" style="display:none;">
-
-        <h2>💌 A Letter For You</h2>
-
-        <p>
-            Happy Birthday, My Love ❤️
-
-Happy Birthday to the most beautiful and amazing girl in my life. Today is all about celebrating you and the happiness you bring into my world every single day. From the moment you came into my life, everything became brighter, warmer, and more meaningful. Your smile gives me peace, your laughter is my favorite sound, and your love is the greatest gift I have ever received.
-
-Thank you for always standing by my side, believing in me, and making even ordinary days feel special. I cherish every memory we’ve created together, and I look forward to making countless more with you. No matter what challenges come our way, I promise to always support you, respect you, and love you with all my heart.
-
-On your special day, I pray that all your dreams come true and that your life is filled with endless happiness, success, good health, and love. You deserve every beautiful thing this world has to offer because you have such a kind and loving heart.
-
-I hope this birthday brings you as much joy as you bring into my life. Thank you for being my best friend, my biggest happiness, and the love of my life.
-
-Happy Birthday once again, my princess. I love you today, tomorrow, and forever. ❤️🎂✨
-        </p>
-
-        <button onclick="showGallery()">
-            📸 Our Memories
-        </button>
-
-    </div>
-
-    <div id="gallery" style="display:none;">
-
-        <div class="gallery">
-
-            <div class="photo">
-                <img src="IMG_3332.jpeg" alt="Photo 1" onclick="openImage(this.src)">
-            </div>
-
-            <div class="photo">
-                <img src="IMG_3235.jpeg" alt="Photo 2" onclick="openImage(this.src)">
-            </div>
-
-            <div class="photo">
-                <img src="IMG_3131.jpeg" alt="Photo 3" onclick="openImage(this.src)">
-            </div>
-
-        </div>
-
-        <button onclick="finalPage()">
-            ❤️ One Last Surprise
-        </button>
-
-    </div>
-
-    <div id="final" style="display:none;">
-
-        <h1>I Love You Forever ❤️</h1>
-
-        <p>
-            Thank you for coming into my life.
-            You are my biggest happiness, my peace,
-            and my favorite person.
-
-            Happy Birthday, My Princess. 👑❤️
-        </p>
-
-    </div>
-
+<!-- HOME -->
+<section id="home" class="page active">
+    <h1>🎂 Happy Birthday</h1>
+    <h2>Kritika Tamang ❤️</h2>
+    <p class="intro">
+        Every birthday is special,
+        but yours is my favorite day of the year. ❤️
+    </p>
+    <button onclick="openSurprise()">
+        🎁 Open My Surprise
+    </button>
+</section>
+<!-- LETTER -->
+<section id="letter" class="page">
+<h2>💌 A Letter For You</h2>
+<p class="message">
+Happy Birthday to the most beautiful and amazing girl in my life.
+Today is all about celebrating you and the happiness you bring into my world every single day.
+From the moment you came into my life, everything became brighter, warmer, and more meaningful.
+Your smile gives me peace, your laughter is my favorite sound, and your love is the greatest gift I have ever received.
+Thank you for always standing beside me and making every day special.
+I hope this birthday fills your heart with happiness, laughter and unforgettable memories.
+No matter where life takes us, I'll always cherish every moment with you.
+Happy Birthday once again, my princess.
+❤️ I love you today, tomorrow and forever ❤️
+</p>
+<button onclick="showGallery()">
+📸 Our Memories
+</button>
+</section>
+<!-- GALLERY -->
+<section id="gallery" class="page">
+<h2>📸 Our Beautiful Memories</h2>
+<div class="gallery">
+<img src="IMG_3332.jpeg">
+<img src="IMG_3235.jpeg">
+<img src="IMG_3131.jpeg">
 </div>
-
- <div id="popup" onclick="closeImage()">
-
-    <img id="popup-img">
-
+<button onclick="finalPage()">
+❤️ One Last Surprise
+</button>
+</section>
+<!-- FINAL -->
+<section id="final" class="page">
+<h1>I Love You Forever ❤️</h1>
+<p>
+Thank you for coming into my life.
+You are my biggest happiness,
+my peace,
+and my favorite person.
+I promise to always love you,
+respect you,
+and stand beside you.
+Happy Birthday My Princess ❤️
+</p>
+<h2>Forever Yours,<br>Kishal ❤️</h2>
+</section>
 </div>
-
 <script src="script.js"></script>
-
 </body>
 </html>
