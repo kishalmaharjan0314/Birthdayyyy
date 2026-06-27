@@ -51,15 +51,15 @@ Happy Birthday once again, my princess. I love you today, tomorrow, and forever.
         <div class="gallery">
 
             <div class="photo">
-                <img src="IMG_3332.jpeg">
+                <img src="IMG_3332.jpeg" alt="Photo 1" onclick="openImage(this.src)">
             </div>
 
             <div class="photo">
-                <img src="IMG_3235.jpeg">
+                <img src="IMG_3235.jpeg" alt="Photo 2" onclick="openImage(this.src)">
             </div>
 
             <div class="photo">
-                <img src="IMG_3131.jpeg">
+                <img src="IMG_3131.jpeg" alt="Photo 3" onclick="openImage(this.src)">
             </div>
 
         </div>
@@ -86,6 +86,11 @@ Happy Birthday once again, my princess. I love you today, tomorrow, and forever.
 
 </div>
 
+ <div id="popup" onclick="closeImage()">
+
+    <img id="popup-img">
+
+</div>
 
 <script src="script.js"></script>
 
