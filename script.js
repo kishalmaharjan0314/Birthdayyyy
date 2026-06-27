@@ -121,7 +121,7 @@ document.addEventListener("touchmove", function(e){
 
 });
 
-const startDate = new Date("2024-02-14"); // Change this
+const startDate = new Date("2026-02-14"); // Change this
 
 function updateLoveCounter(){
 
