@@ -5,21 +5,50 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 body{
-    background:linear-gradient(135deg,#ff9aa2,#fad0c4);
+
+    margin:0;
+
     min-height:100vh;
+
+    background:linear-gradient(135deg,#ff9aa2,#fad0c4);
+
+    overflow-x:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     padding:20px;
+
+    position:relative;
+
 }
 .container{
-    width:100%;
+
+    width:90%;
+
     max-width:420px;
-    background:white;
+
+    margin:40px auto;
+
+    background:#fff;
+
     border-radius:25px;
+
     padding:30px;
+
     text-align:center;
-    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    position:relative;
+
+    z-index:2;
+
 }
 .page{
     display:none;
