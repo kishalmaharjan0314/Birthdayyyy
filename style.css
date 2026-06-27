@@ -91,14 +91,10 @@ button:hover{
 }
 
 
-..gallery{
-
+.gallery{
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:12px;
-
     margin-top:25px;
 }
 
@@ -122,6 +118,7 @@ button:hover{
 
     object-fit:cover;
 
+    display:block;
 }
 
 
