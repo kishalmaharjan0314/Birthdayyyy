@@ -140,3 +140,38 @@ button:hover{
 
     cursor:pointer;
 }
+.heart{
+
+    position:fixed;
+
+    bottom:-20px;
+
+    color:#ff4d6d;
+
+    animation:float 8s linear infinite;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+@keyframes float{
+
+    from{
+
+        transform:translateY(0) scale(1);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(-110vh) scale(1.8);
+
+        opacity:0;
+
+    }
+
+}
