@@ -1,33 +1,25 @@
+const home = document.getElementById("home");
+const letter = document.getElementById("letter");
+const gallery = document.getElementById("gallery");
+const finalPageDiv = document.getElementById("final");
+function hideAll(){
+    home.classList.remove("active");
+    letter.classList.remove("active");
+    gallery.classList.remove("active");
+    finalPageDiv.classList.remove("active");
+}
 function openSurprise(){
-
-    document.getElementById("home").style.display="none";
-    document.getElementById("surprise").style.display="block";
-
+    hideAll();
+    letter.classList.add("active");
 }
-
 function showGallery(){
-
-    document.getElementById("surprise").style.display="none";
-    document.getElementById("gallery").style.display="block";
-
+    hideAll();
+    gallery.classList.add("active");
 }
-
 function finalPage(){
-
-    document.getElementById("gallery").style.display="none";
-    document.getElementById("final").style.display="block";
-
+    hideAll();
+    finalPageDiv.classList.add("active");
 }
-unction openImage(src){
-
-    document.getElementById("popup").style.display = "flex";
-
-    document.getElementById("popup-img").src = src;
-
-}
-
-function closeImage(){
-
-    document.getElementById("popup").style.display = "none";
-
-}
+// Show the home page when the website loads
+hideAll();
+home.classList.add("active");
