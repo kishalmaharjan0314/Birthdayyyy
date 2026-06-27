@@ -4,11 +4,21 @@ const gallery = document.getElementById("gallery");
 const finalPageDiv = document.getElementById("final");
 const forever = document.getElementById("forever");
 function hideAll(){
+
     home.classList.remove("active");
+
     letter.classList.remove("active");
+
     gallery.classList.remove("active");
+
     finalPageDiv.classList.remove("active");
-    forever.classList.remove("active");
+
+    if (forever) {
+
+        forever.classList.remove("active");
+
+    }
+
 }
 function openSurprise(){
 
@@ -56,7 +66,11 @@ function showForever(){
 
     hideAll();
 
-    forever.classList.add("active");
+    if (forever) {
+
+        forever.classList.add("active");
+
+    }
 
 }
 
