@@ -175,3 +175,21 @@ button:hover{
     }
 
 }
+
+
+
+@keyframes fall {
+
+    from {
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        transform: translateY(100vh) rotate(720deg);
+
+    }
+
+}
