@@ -291,6 +291,38 @@ button:hover{
 
 }
 
+.trail-heart{
 
+    position:fixed;
+
+    font-size:20px;
+
+    pointer-events:none;
+
+    animation:heartFade 1s linear forwards;
+
+    z-index:9999;
+
+}
+
+@keyframes heartFade{
+
+    0%{
+
+        opacity:1;
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%,-120px) scale(2);
+
+    }
+
+}
 
 
